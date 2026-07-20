@@ -168,12 +168,6 @@
     height: var(--vp-nav-height);
 }
 
-/* The custom language dropdown sits beside the version in the desktop menu.
-   VitePress's separate language picker remains available in the mobile menu. */
-.VPNavBar > .wrapper .VPNavBarTranslations {
-    display: none !important;
-}
-
 /* Airi uses a wider, more clearly defined search control in the desktop nav. */
 @media (min-width: 1280px) {
     .VPNavBarSearch .DocSearch-Button,
