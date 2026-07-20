@@ -86,8 +86,8 @@ export default defineConfig({
       lang: 'vi-VN',
       themeConfig: {
         nav: [
-          { text: 'Trang chủ', link: '/' },
-          { text: 'Tài liệu', link: '/guide/getting-started' }
+          { text: 'Trang chủ', link: '/', activeMatch: '^/$' },
+          { text: 'Tài liệu', link: '/guide/getting-started', activeMatch: '^/(guide|support|community)(/|$)' }
         ],
         sidebar: viSidebar,
         editLink: { pattern: `${REPO}/edit/main/:path`, text: 'Chỉnh sửa trang này trên GitHub' },
@@ -107,8 +107,8 @@ export default defineConfig({
       description: 'Official documentation for TeaaMC players.',
       themeConfig: {
         nav: [
-          { text: 'Home', link: '/en/' },
-          { text: 'Docs', link: '/en/guide/getting-started' }
+          { text: 'Home', link: '/en/', activeMatch: '^/en/$' },
+          { text: 'Docs', link: '/en/guide/getting-started', activeMatch: '^/en/(guide|support|community)(/|$)' }
         ],
         sidebar: enSidebar,
         editLink: { pattern: `${REPO}/edit/main/:path`, text: 'Edit this page on GitHub' }
