@@ -87,7 +87,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Trang chủ', link: '/', activeMatch: '^/$' },
-          { text: 'Tài liệu', link: '/guide/getting-started', activeMatch: '^/(guide|support|community)(/|$)' }
+          { text: 'Tài liệu', link: '/guide/getting-started', activeMatch: '^/(guide|support|community)(/|$)' },
+          { component: 'LanguageDropdown' }
         ],
         sidebar: viSidebar,
         editLink: { pattern: `${REPO}/edit/main/:path`, text: 'Chỉnh sửa trang này trên GitHub' },
@@ -108,7 +109,8 @@ export default defineConfig({
       themeConfig: {
         nav: [
           { text: 'Home', link: '/en/', activeMatch: '^/en/$' },
-          { text: 'Docs', link: '/en/guide/getting-started', activeMatch: '^/en/(guide|support|community)(/|$)' }
+          { text: 'Docs', link: '/en/guide/getting-started', activeMatch: '^/en/(guide|support|community)(/|$)' },
+          { component: 'LanguageDropdown' }
         ],
         sidebar: enSidebar,
         editLink: { pattern: `${REPO}/edit/main/:path`, text: 'Edit this page on GitHub' }

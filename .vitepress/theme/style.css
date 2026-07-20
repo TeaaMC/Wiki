@@ -168,6 +168,12 @@
     height: var(--vp-nav-height);
 }
 
+/* The custom animated language picker is used on desktop. VitePress keeps its
+   built-in locale picker inside the mobile navigation menu. */
+.VPNavBar > .wrapper .VPNavBarTranslations {
+    display: none !important;
+}
+
 /* Airi uses a wider, more clearly defined search control in the desktop nav. */
 @media (min-width: 1280px) {
     .VPNavBarSearch .DocSearch-Button,
