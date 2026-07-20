@@ -1,6 +1,6 @@
 # Partner with TeaaMC
 
-The Partner program connects TeaaMC with Vietnamese Minecraft servers that share a commitment to a high-quality, sustainable community. It is intended as a meaningful collaboration—not merely a logo or banner exchange.
+The Partner program connects TeaaMC with Vietnamese Minecraft servers that share a commitment to a high-quality, sustainable community. It is intended as a meaningful collaboration, not merely a logo or banner exchange.
 
 ## Basic requirements
 

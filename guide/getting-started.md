@@ -2,7 +2,7 @@
 
 TeaaMC là máy chủ **Practice Crystal PvP** dành cho Java Edition. Bạn có thể tham gia từ phiên bản **1.20.5 đến 26.2**.
 
-![Sảnh máy chủ TeaaMC](/banner2.png)
+![TeaaMC Minecraft server](/banner.jpg)
 
 ## Địa chỉ kết nối
 

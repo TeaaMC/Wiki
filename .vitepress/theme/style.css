@@ -1,15 +1,15 @@
 :root {
-    /* Purple is kept only as a restrained accent (links, active states, primary
-       buttons). The heavy lifting is done by neutral surfaces — most of the UI,
+    /* Green from the TeaaMC logo is used as a restrained accent for links,
+       active states and primary buttons. Neutral surfaces carry most of the UI,
        especially in dark mode, leans black/grey for a modern, low-chroma look. */
-    --vp-c-brand-1: #8B62CE;
-    --vp-c-brand-2: #9D79D9;
-    --vp-c-brand-3: #B7A0E6;
-    --vp-c-brand-soft: rgba(139, 98, 206, 0.10);
+    --vp-c-brand-1: #4f8f41;
+    --vp-c-brand-2: #62a650;
+    --vp-c-brand-3: #78b966;
+    --vp-c-brand-soft: rgba(98, 166, 80, 0.12);
 
-    --vp-button-brand-bg: #8B62CE;
-    --vp-button-brand-hover-bg: #9D79D9;
-    --vp-button-brand-active-bg: #7A51BD;
+    --vp-button-brand-bg: #4f8f41;
+    --vp-button-brand-hover-bg: #62a650;
+    --vp-button-brand-active-bg: #3f7834;
     --vp-button-brand-text: #ffffff;
 
     /* Light mode: a hair off pure white so large surfaces don't glare, with
@@ -22,10 +22,10 @@
 }
 
 .dark {
-    /* Charcoal, not near-black — dark mode should feel dim, not like a void.
+    /* Charcoal, not near-black. Dark mode should feel dim, not like a void.
        Each surface step is a visible lightness bump over the last so cards,
        dropdowns and hovers read as distinct layers instead of blending into
-       the page. Purple stays an accent, never a fill. */
+       the page. Green stays an accent, never a fill. */
     --vp-c-bg: #16161a;
     --vp-c-bg-alt: #1c1c21;
     --vp-c-bg-elv: #222229;
@@ -35,14 +35,14 @@
     --vp-c-divider: #303038;
     --vp-c-border: #3a3a43;
 
-    --vp-c-brand-1: #C6A5F0;
-    --vp-c-brand-2: #D3B9F4;
-    --vp-c-brand-3: #E0CCF8;
-    --vp-c-brand-soft: rgba(198, 165, 240, 0.16);
+    --vp-c-brand-1: #9cca82;
+    --vp-c-brand-2: #aed899;
+    --vp-c-brand-3: #c1e4b0;
+    --vp-c-brand-soft: rgba(156, 202, 130, 0.16);
 
-    --vp-button-brand-bg: #8B62CE;
-    --vp-button-brand-hover-bg: #9D79D9;
-    --vp-button-brand-active-bg: #7A51BD;
+    --vp-button-brand-bg: #4f8f41;
+    --vp-button-brand-hover-bg: #62a650;
+    --vp-button-brand-active-bg: #3f7834;
     --vp-button-brand-text: #ffffff;
 }
 
@@ -92,7 +92,7 @@
     -webkit-backdrop-filter: blur(16px) saturate(135%);
 }
 
-/* Direct-child chains only (never a bare descendant selector) — VitePress
+/* Direct-child chains only (never a bare descendant selector). VitePress
    reuses "title" and "container" for unrelated nested elements inside this
    same navbar (the actual logo link is `.VPNavBarTitle > a.title`, and the
    mobile hamburger button renders its own `span.container`). A descendant
@@ -107,7 +107,7 @@
 
 /* VitePress's .title/.content/.wrapper/.container layout math (logo pinned
    absolute at a fixed --vp-sidebar-width, content padded to clear it) only
-   ships scoped to .has-sidebar — pages that opt out of their sidebar
+   ships scoped to .has-sidebar. Pages that opt out of their sidebar
    (sidebar: false, e.g. the SQLite Editor tool) fall back to a completely
    different unpositioned layout, which visibly shifts the logo/search/icons
    and makes the nav look inconsistent between pages. Use the same layout math
@@ -316,14 +316,14 @@
 
 /* TeaaMC identity layered on top of the EnhancedEchest documentation style. */
 .VPHero .name {
-    background: linear-gradient(120deg, #8b62ce 12%, #73b75f 88%);
+    background: linear-gradient(120deg, #5f9f4d 8%, #a9d78f 92%);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
 }
 
 .VPHero .image-bg {
-    background: radial-gradient(circle, rgba(115, 183, 95, 0.24), rgba(139, 98, 206, 0.18) 48%, transparent 72%);
+    background: radial-gradient(circle, rgba(115, 183, 95, 0.30), rgba(79, 143, 65, 0.12) 48%, transparent 72%);
     filter: blur(34px);
 }
 

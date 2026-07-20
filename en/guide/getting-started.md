@@ -2,7 +2,7 @@
 
 TeaaMC is a **Practice Crystal PvP** server for Java Edition. You can join with versions **1.20.5 through 26.2**.
 
-![TeaaMC server lobby](/banner2.png)
+![TeaaMC Minecraft server](/banner.jpg)
 
 ## Server addresses
 

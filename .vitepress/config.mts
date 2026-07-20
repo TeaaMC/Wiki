@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 const REPO = 'https://github.com/TeaaMC/Wiki'
+const DISCORD = 'http://dsc.gg/teaamc'
 
 const viSidebar = [
   {
@@ -70,7 +71,10 @@ export default defineConfig({
     logo: '/logo.png',
     siteTitle: 'TeaaMC Wiki',
     search: { provider: 'local' },
-    socialLinks: [{ icon: 'github', link: REPO }],
+    socialLinks: [
+      { icon: 'github', link: REPO },
+      { icon: 'discord', link: DISCORD }
+    ],
     footer: {
       message: 'Tài liệu cộng đồng chính thức của TeaaMC.',
       copyright: 'TeaaMC'
