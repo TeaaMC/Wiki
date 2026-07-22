@@ -107,19 +107,28 @@ onBeforeUnmount(() => {
   line-height: 1;
   color: var(--vp-c-text-1);
   cursor: pointer;
-  transition: color 0.2s, background-color 0.2s, border-color 0.2s;
+  transition:
+    color var(--tea-motion-fast) ease,
+    background-color var(--tea-motion-fast) ease,
+    border-color var(--tea-motion-fast) ease,
+    transform var(--tea-motion-base) var(--tea-ease-out);
 }
 
 .language-dd-btn:hover {
   color: var(--vp-c-brand-1);
   background-color: var(--vp-c-default-soft);
+  transform: translateY(-1px);
+}
+
+.language-dd-btn:active {
+  transform: scale(0.96);
 }
 
 .language-dd-caret {
   display: block;
   flex: 0 0 auto;
   opacity: 0.7;
-  transition: transform 0.22s ease;
+  transition: transform var(--tea-motion-base) var(--tea-ease-spring);
 }
 
 .language-dd.open .language-dd-caret {
@@ -139,6 +148,7 @@ onBeforeUnmount(() => {
   backdrop-filter: blur(12px) saturate(150%);
   -webkit-backdrop-filter: blur(12px) saturate(150%);
   box-shadow: 0 12px 32px rgba(0, 0, 0, 0.22);
+  transform-origin: top right;
 }
 
 .language-dd-item {
@@ -152,13 +162,20 @@ onBeforeUnmount(() => {
   font-size: 0.875rem;
   font-weight: 500;
   text-decoration: none !important;
-  transition: color 0.18s, background-color 0.18s;
+  transition:
+    color var(--tea-motion-fast) ease,
+    background-color var(--tea-motion-fast) ease,
+    transform var(--tea-motion-base) var(--tea-ease-out);
 }
 
 .language-dd-item:hover,
 .language-dd-item.active {
   color: var(--vp-c-brand-1);
   background-color: var(--vp-c-brand-soft);
+}
+
+.language-dd-item:hover {
+  transform: translateX(3px);
 }
 
 .language-dd-item-label {
@@ -173,17 +190,17 @@ onBeforeUnmount(() => {
 }
 
 .language-dd-enter-active {
-  animation: language-dd-in 0.2s ease-out;
+  animation: language-dd-in var(--tea-motion-base) var(--tea-ease-out);
 }
 
 .language-dd-leave-active {
-  animation: language-dd-in 0.15s ease-in reverse;
+  animation: language-dd-in var(--tea-motion-fast) ease-in reverse;
 }
 
 @keyframes language-dd-in {
   from {
     opacity: 0;
-    transform: translateY(-8px) scale(0.98);
+    transform: translateY(-7px) scale(0.96);
   }
   to {
     opacity: 1;

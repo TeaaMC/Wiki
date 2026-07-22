@@ -19,6 +19,14 @@
     --vp-c-bg-elv: #ffffff;
     --vp-c-bg-soft: #f6f5f8;
     --vp-c-bg-mute: #eeedf1;
+
+    /* One small motion vocabulary keeps the interface feeling related instead
+       of giving every component its own timing and easing curve. */
+    --tea-motion-fast: 160ms;
+    --tea-motion-base: 260ms;
+    --tea-motion-slow: 620ms;
+    --tea-ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+    --tea-ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 .dark {
@@ -57,6 +65,23 @@
 
 .VPButton {
     border-radius: 12px !important;
+    box-shadow: 0 4px 14px rgba(31, 73, 25, 0.08);
+    transition:
+        color var(--tea-motion-fast) ease,
+        border-color var(--tea-motion-fast) ease,
+        background-color var(--tea-motion-fast) ease,
+        box-shadow var(--tea-motion-base) var(--tea-ease-out),
+        transform var(--tea-motion-base) var(--tea-ease-out) !important;
+}
+
+.VPButton:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 9px 24px rgba(31, 73, 25, 0.16);
+}
+
+.VPButton:active {
+    transform: translateY(0) scale(0.98);
+    transition-duration: 90ms !important;
 }
 
 .vp-doc div[class*='language-'],
@@ -82,6 +107,34 @@
 .VPNavBarMenuGroup .VPMenuLink,
 .VPFlyout .button {
     border-radius: 10px;
+}
+
+/* A quiet growing underline gives navigation a clear response without making
+   the whole header jump or flash. */
+.VPNavBarMenuLink {
+    position: relative;
+    transition: color var(--tea-motion-fast) ease !important;
+}
+
+.VPNavBarMenuLink::after {
+    position: absolute;
+    right: 14px;
+    bottom: 12px;
+    left: 14px;
+    height: 2px;
+    border-radius: 999px;
+    background: var(--vp-c-brand-1);
+    content: '';
+    opacity: 0.8;
+    transform: scaleX(0);
+    transform-origin: right center;
+    transition: transform var(--tea-motion-base) var(--tea-ease-out);
+}
+
+.VPNavBarMenuLink:hover::after,
+.VPNavBarMenuLink.active::after {
+    transform: scaleX(1);
+    transform-origin: left center;
 }
 
 /* ─── Frosted-glass navigation (airi-style) ───────────────────────────────────
@@ -317,14 +370,40 @@
 /* TeaaMC identity layered on top of the EnhancedEchest documentation style. */
 .VPHero .name {
     background: linear-gradient(120deg, #5f9f4d 8%, #a9d78f 92%);
+    background-size: 160% 160%;
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
+    animation:
+        tea-rise-in var(--tea-motion-slow) 70ms var(--tea-ease-out) both,
+        tea-gradient-drift 7s 900ms ease-in-out infinite alternate;
 }
 
 .VPHero .image-bg {
     background: radial-gradient(circle, rgba(115, 183, 95, 0.30), rgba(79, 143, 65, 0.12) 48%, transparent 72%);
     filter: blur(34px);
+    animation: tea-glow-breathe 5.5s ease-in-out infinite;
+}
+
+.VPHero .text {
+    animation: tea-rise-in var(--tea-motion-slow) 140ms var(--tea-ease-out) both;
+}
+
+.VPHero .tagline {
+    animation: tea-rise-in var(--tea-motion-slow) 210ms var(--tea-ease-out) both;
+}
+
+.VPHero .actions {
+    animation: tea-rise-in var(--tea-motion-slow) 280ms var(--tea-ease-out) both;
+}
+
+.VPHero .image {
+    animation: tea-soft-appear 760ms 160ms var(--tea-ease-out) both;
+}
+
+.VPHero .image-src {
+    filter: drop-shadow(0 18px 26px rgba(36, 78, 29, 0.20));
+    animation: tea-logo-float 6s 1s ease-in-out infinite;
 }
 
 .VPHero .hero-description {
@@ -334,12 +413,29 @@
 
 .VPFeature {
     border-radius: 16px !important;
-    transition: transform 0.2s ease, border-color 0.2s ease;
+    transition:
+        transform var(--tea-motion-base) var(--tea-ease-out),
+        border-color var(--tea-motion-base) ease,
+        box-shadow var(--tea-motion-base) var(--tea-ease-out) !important;
 }
 
 .VPFeature:hover {
-    transform: translateY(-2px);
+    transform: translateY(-4px);
     border-color: var(--vp-c-brand-1);
+    box-shadow: 0 14px 34px rgba(31, 73, 25, 0.12);
+}
+
+.VPFeature .icon,
+.VPFeature .link-text-icon {
+    transition: transform var(--tea-motion-base) var(--tea-ease-spring);
+}
+
+.VPFeature:hover .icon {
+    transform: rotate(-4deg) scale(1.06);
+}
+
+.VPFeature:hover .link-text-icon {
+    transform: translateX(4px);
 }
 
 .vp-doc table {
@@ -357,10 +453,168 @@
     border-radius: 14px;
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.18);
     background: var(--vp-c-bg-soft);
+    transition:
+        transform var(--tea-motion-base) var(--tea-ease-out),
+        box-shadow var(--tea-motion-base) var(--tea-ease-out),
+        border-color var(--tea-motion-fast) ease;
+}
+
+.vp-doc img:hover {
+    transform: translateY(-3px);
+    border-color: color-mix(in srgb, var(--vp-c-brand-1) 55%, var(--vp-c-border));
+    box-shadow: 0 14px 38px rgba(31, 73, 25, 0.16);
+}
+
+/* Keep page changes alive but subtle: the document moves only eight pixels,
+   so reading is never interrupted by a theatrical route transition. */
+.VPDoc .vp-doc {
+    animation: tea-page-in 420ms var(--tea-ease-out) both;
+}
+
+.VPSidebarItem .link,
+.VPDocAsideOutline .outline-link {
+    transition:
+        color var(--tea-motion-fast) ease,
+        transform var(--tea-motion-base) var(--tea-ease-out);
+}
+
+.VPSidebarItem .link:hover,
+.VPDocAsideOutline .outline-link:hover {
+    transform: translateX(3px);
+}
+
+@keyframes tea-rise-in {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tea-soft-appear {
+    from {
+        opacity: 0;
+        filter: blur(8px);
+    }
+    to {
+        opacity: 1;
+        filter: blur(0);
+    }
+}
+
+@keyframes tea-page-in {
+    from {
+        opacity: 0;
+        transform: translateY(8px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes tea-gradient-drift {
+    from { background-position: 0% 50%; }
+    to { background-position: 100% 50%; }
+}
+
+@keyframes tea-glow-breathe {
+    0%, 100% {
+        opacity: 0.72;
+        transform: translate(-50%, -50%) scale(0.94);
+    }
+    50% {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1.06);
+    }
+}
+
+@keyframes tea-logo-float {
+    0%, 100% { transform: translate(-50%, -50%) translateY(0) rotate(0); }
+    50% { transform: translate(-50%, -50%) translateY(-8px) rotate(1deg); }
 }
 
 @media (prefers-reduced-motion: reduce) {
-    .VPFeature {
-        transition: none;
+    html:not(.motion-full) {
+        scroll-behavior: auto;
+    }
+
+    html:not(.motion-full) *,
+    html:not(.motion-full) *::before,
+    html:not(.motion-full) *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+    }
+
+    html:not(.motion-full) .VPButton:hover,
+    html:not(.motion-full) .VPFeature:hover,
+    html:not(.motion-full) .vp-doc img:hover,
+    html:not(.motion-full) .VPSidebarItem .link:hover,
+    html:not(.motion-full) .VPDocAsideOutline .outline-link:hover {
+        transform: none;
+    }
+
+    /* VitePress also applies its own reduced-motion reset. The explicit
+       ?motion=full preview opts back into only TeaaMC's curated animations so
+       we can demonstrate them without changing the normal accessible path. */
+    html.motion-full .VPHero .name {
+        animation-duration: var(--tea-motion-slow), 7s !important;
+        animation-delay: 70ms, 900ms !important;
+        animation-iteration-count: 1, infinite !important;
+    }
+
+    html.motion-full .VPHero .text,
+    html.motion-full .VPHero .tagline,
+    html.motion-full .VPHero .actions {
+        animation-duration: var(--tea-motion-slow) !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    html.motion-full .VPHero .text { animation-delay: 140ms !important; }
+    html.motion-full .VPHero .tagline { animation-delay: 210ms !important; }
+    html.motion-full .VPHero .actions { animation-delay: 280ms !important; }
+
+    html.motion-full .VPHero .image {
+        animation-duration: 760ms !important;
+        animation-delay: 160ms !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    html.motion-full .VPHero .image-bg {
+        animation-duration: 5.5s !important;
+        animation-delay: 0s !important;
+        animation-iteration-count: infinite !important;
+    }
+
+    html.motion-full .VPHero .image-src {
+        animation-duration: 6s !important;
+        animation-delay: 1s !important;
+        animation-iteration-count: infinite !important;
+    }
+
+    html.motion-full .VPButton,
+    html.motion-full .VPFeature,
+    html.motion-full .VPNavBarMenuLink::after,
+    html.motion-full .language-dd-btn,
+    html.motion-full .language-dd-caret,
+    html.motion-full .language-dd-item {
+        transition-duration: var(--tea-motion-base) !important;
+    }
+
+    html.motion-full .language-dd-enter-active {
+        animation-duration: var(--tea-motion-base) !important;
+        animation-delay: 0s !important;
+        animation-iteration-count: 1 !important;
+    }
+
+    html.motion-full .VPDoc .vp-doc {
+        animation-duration: 520ms !important;
+        animation-delay: 40ms !important;
+        animation-iteration-count: 1 !important;
     }
 }
