@@ -26,7 +26,7 @@ Join the server and run:
 /bot
 ```
 
-![TeaaMC Practice Bot menu](/train-bot.jpg)
+![TeaaMC Practice Bot menu](/train-bot.png)
 
 *The in-game Practice Bot configuration menu.*
 
@@ -51,11 +51,15 @@ Start on Easy to get comfortable, isolate one skill at a time, then move up to M
 - **Sword** — pure melee sword PvP.
 - **Crystal** — Crystal PvP: the bot knocks you up, then detonates End Crystals / Respawn Anchors.
 
+![The Combat Style slot in the menu](/images/bot/combat-style.png)
+
 When you pick Crystal, three extra options unlock:
 
 - **Anchor Combos** — enable to let the bot also use Respawn Anchor blast combos (not just End Crystals).
 - **Explosions Break Blocks** — whether the blasts destroy surrounding blocks.
 - **Crystal Cooldown** — time (in seconds) between crystal combos. Left-click increases, right-click decreases.
+
+![The Explosions Break Blocks slot in the menu](/images/bot/explosions-break-blocks.png)
 
 ## Equipment
 

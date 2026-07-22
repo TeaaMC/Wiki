@@ -10,31 +10,31 @@ Biome Worlds are created and managed by the server team. This page only describe
 
 Gently rolling grass hills over a dirt base — grass on the surface, dirt underneath. Trees, tall grass clumps and flowers are scattered around.
 
-<!-- ![Plains](/images/biomes/plains.png) -->
+![Plains](/images/biomes/plains.png)
 
 ## Desert
 
 Long stretches of sand dunes over a thick sandstone base below. Dotted with cacti and dead bushes.
 
-<!-- ![Desert](/images/biomes/desert.png) -->
+![Desert](/images/biomes/desert.png)
 
 ## Snowy Plains
 
 Just like Plains — gentle grass hills with trees, grass and flowers — but the entire surface is covered by a layer of snow.
 
-<!-- ![Snowy Plains](/images/biomes/snowy_plains.png) -->
+![Snowy Plains](/images/biomes/snowy_plains.png)
 
 ## Badlands
 
 Colorful terracotta terrain: a red sand surface over stacked, offset layers of terracotta — red, orange, yellow, white, light gray and brown — forming its signature banded look. It also has cacti and dead bushes like the desert.
 
-<!-- ![Badlands](/images/biomes/badlands.png) -->
+![Badlands](/images/biomes/badlands.png)
 
 ## Mushroom Fields
 
 A mushroom world with a mycelium surface over dirt. Giant mushrooms grow scattered across the landscape.
 
-<!-- ![Mushroom Fields](/images/biomes/mushroom_fields.png) -->
+![Mushroom Fields](/images/biomes/mushroom_fields.png)
 
 ## Moon <Badge type="tip" text="New" />
 
@@ -54,6 +54,6 @@ Floating End Stone islands drifting over the void, with a few chorus plants scat
 
 <!-- ![The End](/images/biomes/the_end.png) -->
 
-::: tip Screenshots
-The image frames above are empty for now. Once you have real screenshots for each biome, drop the files into `public/images/biomes/` (e.g. `plains.png`) and remove the `<!-- -->` comment around the matching image line.
+::: tip Moon / Nether / The End screenshots
+The three new biomes don't have screenshots yet. Once you have them, drop the files into `public/images/biomes/` (`moon.png`, `nether.png`, `the_end.png`) and remove the `<!-- -->` comment around the matching image line.
 :::
