@@ -20,6 +20,12 @@ const viSidebar = [
     ]
   },
   {
+    text: 'Thế giới',
+    items: [
+      { text: 'Biome Worlds', link: '/guide/biome-worlds' }
+    ]
+  },
+  {
     text: 'Hỗ trợ',
     items: [
       { text: 'Hiệu năng & độ trễ', link: '/support/performance' },
@@ -49,6 +55,12 @@ const enSidebar = [
       { text: 'Kits', link: '/en/guide/kits' },
       { text: 'Crystal Royale', link: '/en/guide/crystal-royale' },
       { text: 'RTP Queue & Duel', link: '/en/guide/teaaduel' }
+    ]
+  },
+  {
+    text: 'Worlds',
+    items: [
+      { text: 'Biome Worlds', link: '/en/guide/biome-worlds' }
     ]
   },
   {
