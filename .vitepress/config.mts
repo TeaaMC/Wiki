@@ -52,6 +52,13 @@ const enSidebar = [
     ]
   },
   {
+    text: 'Support',
+    items: [
+      { text: 'Performance & latency', link: '/en/support/performance' },
+      { text: 'Discord rank sync', link: '/en/support/discord-sync' }
+    ]
+  },
+  {
     text: 'Community',
     items: [
       { text: 'Media & YouTuber ranks', link: '/en/community/media' },
