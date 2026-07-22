@@ -10,7 +10,7 @@ Chạy `/rtpqueue` (alias `/rtpq`) để vào hàng đợi random-teleport. Khi 
 - Nếu server có cấu hình nhiều world, chạy `/rtpqueue <world>` để xếp hàng cho world cụ thể
 
 ::: tip Nhớ mang theo đồ
-Load sẵn kit bằng `/kit` trước khi vào — xem thêm ở [Kit](/kits).
+Load sẵn kit bằng `/kit` trước khi vào — xem thêm ở [Kit](/guide/kits).
 :::
 
 ## Thách đấu 1 người cụ thể

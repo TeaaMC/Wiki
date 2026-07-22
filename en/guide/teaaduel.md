@@ -10,7 +10,7 @@ Run `/rtpqueue` (alias `/rtpq`) to join the random-teleport queue. Once matched,
 - If the server has multiple allowed worlds configured, run `/rtpqueue <world>` to queue for a specific one
 
 ::: tip Uses your loaded kit
-Bring your gear by loading a kit first with `/kit` — see [Kits](/kits).
+Bring your gear by loading a kit first with `/kit` — see [Kits](/en/guide/kits).
 :::
 
 ## Duel a specific player
