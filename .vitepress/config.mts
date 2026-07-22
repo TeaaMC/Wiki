@@ -12,6 +12,14 @@ const viSidebar = [
     ]
   },
   {
+    text: 'Chế độ chơi',
+    items: [
+      { text: 'Kit', link: '/guide/kits' },
+      { text: 'Crystal Royale', link: '/guide/crystal-royale' },
+      { text: 'RTP Queue & Duel', link: '/guide/teaaduel' }
+    ]
+  },
+  {
     text: 'Hỗ trợ',
     items: [
       { text: 'Hiệu năng & độ trễ', link: '/support/performance' },
@@ -36,10 +44,11 @@ const enSidebar = [
     ]
   },
   {
-    text: 'Support',
+    text: 'Gameplay',
     items: [
-      { text: 'Performance & latency', link: '/en/support/performance' },
-      { text: 'Discord rank sync', link: '/en/support/discord-sync' }
+      { text: 'Kits', link: '/en/guide/kits' },
+      { text: 'Crystal Royale', link: '/en/guide/crystal-royale' },
+      { text: 'RTP Queue & Duel', link: '/en/guide/teaaduel' }
     ]
   },
   {
