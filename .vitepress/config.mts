@@ -42,7 +42,7 @@ const viSidebar = [
   {
     text: 'Cộng đồng',
     items: [
-      { text: 'Rank Media & YouTuber', link: '/community/media' },
+      { text: 'Rank Media', link: '/community/media' },
       { text: 'Hợp tác cùng TeaaMC', link: '/community/partner' }
     ]
   }
@@ -87,7 +87,7 @@ const enSidebar = [
   {
     text: 'Community',
     items: [
-      { text: 'Media & YouTuber ranks', link: '/en/community/media' },
+      { text: 'Media rank', link: '/en/community/media' },
       { text: 'Partner with TeaaMC', link: '/en/community/partner' }
     ]
   }

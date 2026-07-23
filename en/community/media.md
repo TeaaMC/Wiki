@@ -1,8 +1,8 @@
-# Media and YouTuber ranks
+# Media rank
 
-TeaaMC recognizes creators who publish suitable content, maintain consistent activity and contribute positively to the community.
+TeaaMC recognizes creators who make solid content, stay active and give back to the community. If you regularly make videos or streams about the server, this rank is for you.
 
-## Media rank
+## Requirements
 
 Basic requirements:
 
@@ -15,21 +15,10 @@ Plus:
 - Your content or bio must include the **server IP**
 - Content must be from the **last 30 days**
 
-To apply, open the in-game menu and click **Media Rank**, or open a ticket as described below.
+## Applying
 
-## YouTuber rank
-
-This rank is reserved for active, professional YouTube creators:
-
-- YouTube only.
-- At least **10,000 subscribers**.
-- Stable view counts proportional to the subscriber count.
-- Minecraft content is not required, but all content must follow server rules.
-
-## Apply for review
-
-Open a ticket in **💌┃ticket** and include a link to your channel.
+Click **Media Rank** in the in-game menu to apply, or open a ticket in the [ticket channel on Discord](https://discord.com/channels/1346143677944430612/1346152374024273960) and include a link to your channel.
 
 ::: info Review policy
-Meeting the numbers does not guarantee a rank. The administration may decline unsuitable content and may review existing ranks based on creator activity, quality and community feedback.
+Hitting the numbers doesn't guarantee the rank. The team can still turn down unsuitable content, and may review ranks it has already granted based on a creator's activity, quality and community feedback.
 :::
