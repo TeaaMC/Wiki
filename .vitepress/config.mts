@@ -29,6 +29,7 @@ const viSidebar = [
     text: 'Hỗ trợ',
     items: [
       { text: 'Hiệu năng & độ trễ', link: '/support/performance' },
+      { text: 'Liên kết Discord & 2FA', link: '/support/discord-link' },
       { text: 'Đồng bộ Discord', link: '/support/discord-sync' }
     ]
   },
@@ -67,6 +68,7 @@ const enSidebar = [
     text: 'Support',
     items: [
       { text: 'Performance & latency', link: '/en/support/performance' },
+      { text: 'Discord linking & 2FA', link: '/en/support/discord-link' },
       { text: 'Discord rank sync', link: '/en/support/discord-sync' }
     ]
   },
