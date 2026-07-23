@@ -26,6 +26,12 @@ const viSidebar = [
     ]
   },
   {
+    text: 'Tùy chỉnh',
+    items: [
+      { text: 'Cosmetics & Tag', link: '/guide/cosmetics' }
+    ]
+  },
+  {
     text: 'Hỗ trợ',
     items: [
       { text: 'Hiệu năng & độ trễ', link: '/support/performance' },
@@ -62,6 +68,12 @@ const enSidebar = [
     text: 'Worlds',
     items: [
       { text: 'Biome Worlds', link: '/en/guide/biome-worlds' }
+    ]
+  },
+  {
+    text: 'Customization',
+    items: [
+      { text: 'Cosmetics & Tag', link: '/en/guide/cosmetics' }
     ]
   },
   {
