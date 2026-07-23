@@ -4,12 +4,18 @@ TeaaMC ghi nhận các nhà sáng tạo có nội dung phù hợp, hoạt độn
 
 ## Rank Media
 
-Ứng viên cần đáp ứng các tiêu chí sau:
+Yêu cầu cơ bản:
 
-- Nội dung rõ ràng và có liên quan đến Minecraft.
-- Lượt xem và lượng người theo dõi ổn định, đồng đều.
-- Không sử dụng công cụ, dịch vụ hoặc phương pháp tăng tương tác gian lận.
-- Có ít nhất một video liên quan đến TeaaMC.
+- Có ít nhất **300 lượt xem** trên YouTube
+- Có ít nhất **3.000 lượt xem** trên TikTok
+- Trung bình **10 người xem** mỗi buổi stream
+
+Kèm theo:
+
+- Nội dung phải gắn **IP máy chủ** trong video hoặc phần bio
+- Nội dung phải nằm trong vòng **30 ngày** gần nhất
+
+Muốn nộp đơn thì mở menu trong game rồi bấm vào **Media Rank**, hoặc tạo ticket theo hướng dẫn bên dưới.
 
 ## Rank YouTuber
 

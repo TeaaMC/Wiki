@@ -4,12 +4,18 @@ TeaaMC recognizes creators who publish suitable content, maintain consistent act
 
 ## Media rank
 
-Applicants must meet these criteria:
+Basic requirements:
 
-- Publish clear content related to Minecraft.
-- Maintain consistent, credible views and follower activity.
-- Never use tools, paid services or fraudulent methods to inflate engagement.
-- Publish at least one video related to TeaaMC.
+- At least **300 views** on YouTube
+- At least **3,000 views** on TikTok
+- An average of **10 viewers** per stream
+
+Plus:
+
+- Your content or bio must include the **server IP**
+- Content must be from the **last 30 days**
+
+To apply, open the in-game menu and click **Media Rank**, or open a ticket as described below.
 
 ## YouTuber rank
 
