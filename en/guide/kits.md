@@ -20,7 +20,7 @@ In the menu:
 | **Premade Kits** | Browse public / premade kits |
 | **Clear Inventory** | Empties your inventory |
 | **Repair Items** | Repairs your current gear |
-| **Meow** | 🐱 |
+| **Meow** | Just a fun button — give it a click |
 
 ## Quick-load kits & enderchests
 

@@ -20,7 +20,7 @@ Trong menu:
 | **Premade Kits** | Xem các kit công khai / dựng sẵn |
 | **Clear Inventory** | Dọn sạch túi đồ của bạn |
 | **Repair Items** | Sửa toàn bộ đồ đang cầm |
-| **Meow** | 🐱 |
+| **Meow** | Nút cho vui thôi, cứ bấm thử xem |
 
 ## Load nhanh kit & enderchest
 

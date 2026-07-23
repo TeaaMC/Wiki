@@ -6,7 +6,7 @@ Crystal Royale là chế độ **battle royale** của TeaaMC — cả sảnh nh
 
 Crystal Royale dùng một resource pack riêng để hiển thị **viền bão (border)**. **Không cài pack này thì bạn sẽ không nhìn thấy viền** — rất dễ chết oan vì đi ra ngoài vùng an toàn mà không hay biết.
 
-- 📦 **[Tải resource pack (timc pack)](/downloads/timc-pack.zip)**
+- <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color:var(--vp-c-brand-1);vertical-align:-3px"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><polyline points="3.29 7 12 12 20.71 7"/><path d="m7.5 4.27 9 5.15"/></svg> **[Tải resource pack (timc pack)](/downloads/timc-pack.zip)**
 
 Cách cài (thủ công):
 
