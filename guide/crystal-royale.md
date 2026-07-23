@@ -2,6 +2,23 @@
 
 Crystal Royale là chế độ **battle royale** của TeaaMC — cả sảnh nhảy dù xuống bản đồ, nhặt đồ, dùng vật phẩm đặc biệt, và vòng bão (storm) thu hẹp dần cho tới khi chỉ còn 1 người (hoặc 1 team) sống sót.
 
+## Resource pack (bắt buộc)
+
+Crystal Royale dùng một resource pack riêng để hiển thị **viền bão (border)**. **Không cài pack này thì bạn sẽ không nhìn thấy viền** — rất dễ chết oan vì đi ra ngoài vùng an toàn mà không hay biết.
+
+- 📦 **[Tải resource pack (timc pack)](/downloads/timc-pack.zip)**
+
+Cách cài (thủ công):
+
+1. Tải file `.zip` ở trên — **không giải nén**.
+2. Trong Minecraft, vào **Options → Resource Packs**.
+3. Bấm **Open Pack Folder**, rồi copy file `.zip` vừa tải vào thư mục đó.
+4. Quay lại Minecraft, đưa pack sang cột bên phải (Selected) để bật, rồi bấm **Done**.
+
+::: tip Server có thể tự gửi pack
+Nhiều lúc máy chủ sẽ tự động gửi resource pack khi bạn vào — chỉ cần bấm **Yes / Đồng ý** khi được hỏi là xong. Nếu vì lý do gì đó không nhận được, hãy cài thủ công theo các bước trên.
+:::
+
 ## Tham gia trận đấu
 
 Khi host mở queue, bạn sẽ thấy thông báo trong chat với nút bấm nhanh:

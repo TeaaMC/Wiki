@@ -2,6 +2,23 @@
 
 Crystal Royale is TeaaMC's **battle royale** mode — the whole lobby parachutes onto the map, loots gear, uses special items, and a shrinking storm closes in until only one player (or team) is left standing.
 
+## Resource pack (required)
+
+Crystal Royale uses a custom resource pack to render the **storm border**. **Without this pack you won't see the border** — an easy way to die by wandering out of the safe zone without noticing.
+
+- 📦 **[Download the resource pack (timc pack)](/downloads/timc-pack.zip)**
+
+How to install (manually):
+
+1. Download the `.zip` above — **don't unzip it**.
+2. In Minecraft, go to **Options → Resource Packs**.
+3. Click **Open Pack Folder**, then copy the downloaded `.zip` into that folder.
+4. Back in Minecraft, move the pack to the right (Selected) column to enable it, then click **Done**.
+
+::: tip The server may send it automatically
+The server often sends the resource pack automatically when you join — just click **Yes** when prompted. If for some reason you don't receive it, install it manually with the steps above.
+:::
+
 ## Joining a match
 
 When a host opens the queue, you'll see a chat announcement with a quick-join button:
