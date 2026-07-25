@@ -36,24 +36,18 @@ A mushroom world with a mycelium surface over dirt. Giant mushrooms grow scatter
 
 ![Mushroom Fields](/images/biomes/mushroom_fields.png)
 
-## Moon <Badge type="tip" text="New" />
+## Coming soon
+
+The three biomes below are still being finalized for release.
+
+### Moon <Badge type="tip" text="Coming soon" />
 
 A Moon surface made entirely of End Stone, pockmarked with craters, under an End-style dark sky. When you enter this world, you get low-gravity effects: **Slow Falling**, **Speed** and **Jump Boost** — you jump higher and fall much slower than normal.
 
-<!-- ![Moon](/images/biomes/moon.png) -->
-
-## Nether <Badge type="tip" text="New" />
+### Nether <Badge type="tip" text="Coming soon" />
 
 A Nether world with a Netherrack floor mixed with roughly 35% Crimson Nylium, plus lava lakes. The terrain is deliberately flattened — perfect for Crystal PvP.
 
-<!-- ![Nether](/images/biomes/nether.png) -->
-
-## The End <Badge type="tip" text="New" />
+### The End <Badge type="tip" text="Coming soon" />
 
 Floating End Stone islands drifting over the void, with a few chorus plants scattered around — the classic End atmosphere.
-
-<!-- ![The End](/images/biomes/the_end.png) -->
-
-::: tip Moon / Nether / The End screenshots
-The three new biomes don't have screenshots yet. Once you have them, drop the files into `public/images/biomes/` (`moon.png`, `nether.png`, `the_end.png`) and remove the `<!-- -->` comment around the matching image line.
-:::

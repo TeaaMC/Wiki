@@ -36,24 +36,18 @@ Thế giới nấm với bề mặt là mycelium (đất nấm) trên nền đ�
 
 ![Mushroom Fields](/images/biomes/mushroom_fields.png)
 
-## Moon <Badge type="tip" text="Mới" />
+## Sắp ra mắt
+
+Ba biome dưới đây đang trong quá trình hoàn thiện để ra mắt.
+
+### Moon <Badge type="tip" text="Sắp ra mắt" />
 
 Bề mặt Mặt Trăng làm hoàn toàn bằng End Stone, lỗ chỗ những hố thiên thạch, dưới bầu trời tối kiểu End. Khi bước vào thế giới này, người chơi được các hiệu ứng mô phỏng trọng lực thấp: **Slow Falling**, **Speed** và **Jump Boost** — nhảy cao hơn và rơi chậm hơn hẳn bình thường.
 
-<!-- ![Moon](/images/biomes/moon.png) -->
-
-## Nether <Badge type="tip" text="Mới" />
+### Nether <Badge type="tip" text="Sắp ra mắt" />
 
 Một thế giới Nether với nền Netherrack pha khoảng 35% Crimson Nylium, điểm thêm hồ dung nham. Địa hình được làm phẳng có chủ đích — rất hợp để đấu Crystal PvP.
 
-<!-- ![Nether](/images/biomes/nether.png) -->
-
-## The End <Badge type="tip" text="Mới" />
+### The End <Badge type="tip" text="Sắp ra mắt" />
 
 Những hòn đảo End Stone bay lơ lửng trên vực void, với vài cụm chorus mọc rải rác — không gian End cổ điển.
-
-<!-- ![The End](/images/biomes/the_end.png) -->
-
-::: tip Ảnh Moon / Nether / The End
-Ba biome mới hiện chưa có ảnh. Khi có ảnh chụp thật, đặt file vào `public/images/biomes/` (`moon.png`, `nether.png`, `the_end.png`) rồi bỏ dấu chú thích `<!-- -->` quanh dòng ảnh tương ứng.
-:::
