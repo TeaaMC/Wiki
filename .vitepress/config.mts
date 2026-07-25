@@ -2,6 +2,7 @@ import { defineConfig } from 'vitepress'
 
 const REPO = 'https://github.com/TeaaMC/Wiki'
 const DISCORD = 'http://dsc.gg/teaamc'
+const SITE_URL = 'https://wiki.teaamc.asia'
 
 const viSidebar = [
   {
@@ -97,17 +98,17 @@ export default defineConfig({
   title: 'TeaaMC Wiki',
   description: 'Tài liệu chính thức dành cho người chơi TeaaMC.',
   lang: 'vi-VN',
-  base: '/Wiki/',
   cleanUrls: true,
   lastUpdated: true,
-  sitemap: { hostname: 'https://teaamc.github.io/Wiki/' },
+  sitemap: { hostname: SITE_URL },
   head: [
-    ['link', { rel: 'icon', type: 'image/png', href: '/Wiki/logo.png' }],
+    ['link', { rel: 'icon', type: 'image/png', href: '/logo.png' }],
     ['meta', { property: 'og:type', content: 'website' }],
     ['meta', { property: 'og:title', content: 'TeaaMC Wiki' }],
     ['meta', { property: 'og:description', content: 'Hướng dẫn và thông tin chính thức dành cho người chơi TeaaMC.' }],
-    ['meta', { property: 'og:image', content: 'https://teaamc.github.io/Wiki/banner.jpg' }],
-    ['meta', { name: 'twitter:card', content: 'summary_large_image' }]
+    ['meta', { property: 'og:image', content: `${SITE_URL}/banner.jpg` }],
+    ['meta', { name: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { name: 'twitter:image', content: `${SITE_URL}/banner.jpg` }]
   ],
   themeConfig: {
     logo: '/logo.png',
