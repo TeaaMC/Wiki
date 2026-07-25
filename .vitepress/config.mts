@@ -29,12 +29,14 @@ const viSidebar = [
   {
     text: 'Tùy chỉnh',
     items: [
+      { text: 'Shards', link: '/guide/shards' },
       { text: 'Cosmetics & Tag', link: '/guide/cosmetics' }
     ]
   },
   {
     text: 'Hỗ trợ',
     items: [
+      { text: 'Luật máy chủ', link: '/support/rules' },
       { text: 'Hiệu năng & độ trễ', link: '/support/performance' },
       { text: 'Liên kết Discord & 2FA', link: '/support/discord-link' },
       { text: 'Đồng bộ Discord', link: '/support/discord-sync' }
@@ -74,12 +76,14 @@ const enSidebar = [
   {
     text: 'Customization',
     items: [
+      { text: 'Shards', link: '/en/guide/shards' },
       { text: 'Cosmetics & Tag', link: '/en/guide/cosmetics' }
     ]
   },
   {
     text: 'Support',
     items: [
+      { text: 'Server rules', link: '/en/support/rules' },
       { text: 'Performance & latency', link: '/en/support/performance' },
       { text: 'Discord linking & 2FA', link: '/en/support/discord-link' },
       { text: 'Discord rank sync', link: '/en/support/discord-sync' }
