@@ -1,128 +1,199 @@
 # Kit
 
-TeaaMC cho phép bạn lưu **10 kit tùy chỉnh** và **5 enderchest** riêng, kèm một trình chỉnh sửa (Kit Editor) mạnh để tinh chỉnh từng món đồ: đổi tên, enchant, đổi loại, trim giáp, hiệu ứng mũi tên và hơn thế nữa.
+Ở TeaaMC, mỗi người tự dựng kit PvP của riêng mình từ kho đồ (Kit Room) mà server chuẩn bị sẵn, lưu lại, rồi gọi ra dùng trong trận. Mặc định bạn có **10 kit** và **5 rương ẩn (enderchest)**.
 
-## Mở menu Kit
+::: warning Ba điều nhớ trước khi nghịch kit
+- **Load kit là GHI ĐÈ.** Khi bạn load một kit, toàn bộ túi đồ hiện tại bị thay thế — đồ đang cầm sẽ mất. Cất đồ vào rương trước khi load.
+- **Không có nút "Lưu".** Trong Kit Editor, kit được lưu khi bạn **đóng GUI** (`Esc`) hoặc bấm nút đỏ **Back**. Nút Back là *lưu và thoát*, không phải huỷ.
+- **Túi đồ "biến mất" là bình thường.** Khi mở Kit Editor, đồ thật của bạn được cất tạm và thay bằng kit đang dựng. Đóng GUI là đồ thật quay lại nguyên vẹn.
+:::
 
-Chạy `/kit` (alias `/k`) để mở menu chính.
+## Menu chính — `/kit`
 
-![Menu Kit chính](/images/kit/main-menu.png)
+Gõ `/kit` (hoặc `/k`) để mở menu chính. Hàng trên là 10 kit, hàng dưới là 5 rương ẩn.
 
-Trong menu:
+![Menu Kit](/images/kit/kit-menu.jpg)
 
-- **Túi màu xanh lá** = slot kit đã có đồ. **Túi trống** = slot kit chưa lưu gì.
-- **Mắt Ender / rương Ender** = 5 slot enderchest của bạn.
-- Các nút chức năng ở hàng dưới:
-
-| Nút | Chức năng |
+| Biểu tượng | Ý nghĩa |
 |---|---|
-| **Kit Room** | Mở phòng kit dựng sẵn của server (xem bên dưới) |
-| **Premade Kits** | Xem các kit công khai / dựng sẵn |
-| **Clear Inventory** | Dọn sạch túi đồ của bạn |
-| **Repair Items** | Sửa toàn bộ đồ đang cầm |
-| **Meow** | Nút cho vui thôi, cứ bấm thử xem |
+| Shulker xanh lá | Kit đã có đồ |
+| Shulker tối màu | Kit còn trống |
+| Rương Ender | Enderchest đã có đồ |
+| Mắt Ender | Enderchest còn trống |
 
-## Load nhanh kit & enderchest
+Cách bấm giống nhau cho cả kit lẫn enderchest:
 
-Không cần mở menu, bạn có thể nạp thẳng bằng lệnh:
+| Thao tác | Kết quả |
+|---|---|
+| **Chuột trái** | Load vào người và đóng menu |
+| **Chuột phải** | Mở Kit Editor để sửa |
+| **Shift + chuột phải** | Xoá kit (không hỏi lại, không hoàn tác được) |
+| Bấm ô trống | Mở Kit Editor để tạo kit mới |
 
-- `/k1` đến `/k10` (alias `/kit1`–`/kit10`) — nạp 1 trong 10 kit của bạn
-- `/ec1` đến `/ec5` (alias `/enderchest1`–`/enderchest5`) — nạp 1 trong 5 enderchest của bạn
-- `/enderchest` (alias `/ec`) — xem enderchest thường của bạn
+![Hướng dẫn thao tác hiện khi rê chuột lên một kit](/images/kit/kit-menu-actions.jpg)
+
+## Load nhanh trong trận
+
+Không cần mở menu, bạn nạp thẳng bằng lệnh:
+
+- `/k1` đến `/k10` — load nhanh kit số 1–10
+- `/ec1` đến `/ec5` — load nhanh rương ẩn số 1–5
+- `/ec` — mở xem rương ẩn thường
 
 ::: info Không có thời gian hồi
-Kit và enderchest nạp được bất cứ lúc nào — không có cooldown giữa các lần đổi.
+Kit và enderchest load được bất cứ lúc nào, không có cooldown giữa các lần đổi.
 :::
 
-## Chỉnh sửa kit (Kit Editor)
+## Dựng và sửa kit — Kit Editor
 
-Từ menu `/kit`, click vào một slot để mở **Kit Editor**.
+Mở bằng cách **chuột phải** vào một ô kit trong `/kit`, hoặc gõ `/kitroom editor` rồi chọn ô muốn sửa.
 
-![Kit Editor](/images/kit/kit-editor.png)
+![Kit Editor](/images/kit/kitroom-weapons.jpg)
 
-- Bày đồ vào khu túi như một kho bình thường; đặt giáp và khiên vào các ô **Helmet / Chestplate / Leggings / Boots / Offhand** bên phải.
-- **Import** — nạp nhanh toàn bộ đồ đang mặc/cầm vào kit.
-- **Clear** — xóa sạch nội dung đang soạn.
-- **Đóng menu là tự lưu** — không cần nút save.
+Màn hình chia hai phần:
 
-Khi rê chuột lên một món trong editor, bạn sẽ thấy hướng dẫn thao tác:
+- **Nửa trên** là kho đồ của server (Kit Room). Đồ ở đây **vô hạn** — lấy xong ô tự đầy lại. Cột phải có tab để đổi trang/nhóm đồ.
+- **Nửa dưới là túi đồ của bạn = kit đang dựng.** Sắp xếp thế nào thì lúc load ra sẽ đúng y như vậy. Một kit gồm **41 ô**: 36 ô túi đồ, 4 món giáp và 1 ô tay phụ.
 
-![Tooltip trong Kit Editor](/images/kit/item-tooltip.png)
+| Thao tác trong Editor | Kết quả |
+|---|---|
+| Kéo/bấm đồ ở kho trên xuống túi | Lấy đồ vào kit |
+| **Shift + chuột trái** vào đồ trong kit | Mở **Item Editor** (đổi tên, phù phép, đổi loại…) |
+| **Chuột phải** vào đồ trong kit (tay không cầm gì) | Nhân bản món đó ra con trỏ |
+| **Phím Q** khi trỏ vào ô kit | Xoá ô đó |
+| Ném ra vùng trống ngoài khung | Xoá món đang cầm trên chuột |
+| Nút đỏ **Back** hoặc `Esc` | Lưu kit và thoát |
 
-- **Shift-Click** — mở trình chỉnh sửa món đồ đó
-- **Right-Click** — nhân bản món đồ
-- **Drop (Q)** — bỏ món đồ khỏi kit
+::: tip Xoá thoải mái
+Đồ trong Kit Editor chỉ là bản sao từ kho — xoá bao nhiêu cũng được, không đụng tới đồ thật của bạn.
+:::
 
-## Chỉnh sửa từng món (Item Editor)
+### Kho đồ có sẵn những gì
 
-Shift-Click một món trong Kit Editor để mở **Item Editor** với các tùy chọn:
+Kho đồ chia thành nhiều nhóm, đổi bằng tab ở cột phải. Ví dụ các nhóm:
 
-### Rename — đổi tên
+**Weapons** — kiếm, rìu, cúp, xẻng, đinh ba…
+
+![Kho đồ — Weapons](/images/kit/kitroom-weapons.jpg)
+
+**Crystal** — end crystal, obsidian, respawn anchor, ngọc ender, totem, TNT…
+
+![Kho đồ — Crystal](/images/kit/kitroom-crystal.jpg)
+
+**Armors** — giáp kim cương/netherite, elytra, shulker…
+
+![Kho đồ — Armors](/images/kit/kitroom-armors.jpg)
+
+**Food & Potion** — táo vàng, đồ ăn, các loại bình thuốc và bình ném…
+
+![Kho đồ — Food & Potion](/images/kit/kitroom-food-potion.jpg)
+
+**Random** — cung, nỏ, mũi tên, tuyết…
+
+![Kho đồ — Random](/images/kit/kitroom-random.jpg)
+
+### Item Editor
+
+Shift + chuột trái vào một món trong kit để mở. Chỉ những nút hợp với món đó mới hiện:
+
+| Nút | Công dụng |
+|---|---|
+| **Rename** | Đổi tên món đồ |
+| **Amount** | Đổi số lượng trong stack |
+| **Enchant** | Thêm/bớt phù phép |
+| **Change Type** | Đổi chất liệu (ví dụ sắt → kim cương) |
+| **Trim** | Đổi hoa văn giáp |
+| **Variant** | Đổi biến thể (mũi tên, pháo hoa, bình thuốc…) |
+| **Shulker** | Mở và sắp xếp đồ bên trong shulker box |
+
+Một vài ví dụ:
+
 ![Đổi tên item](/images/kit/rename.png)
 
-### Amount — đổi số lượng trong stack
-![Đổi số lượng](/images/kit/amount.png)
+![Thêm phù phép](/images/kit/enchant.png)
 
-### Enchant — thêm/bớt phù phép
-![Enchant](/images/kit/enchant.png)
+![Đổi hoa văn giáp](/images/kit/armor-trim.png)
 
-### Change Type — đổi loại / tier của món (ví dụ đổi màu, đổi cấp vật liệu)
-![Change Type](/images/kit/change-type.png)
+## Rương ẩn (Enderchest)
 
-### Trim — tùy biến trim giáp
-Chọn **hoa văn (pattern)** và **vật liệu (material)** rồi bấm áp dụng. Khiên có bộ chỉnh riêng (Shield Customizer) với hoa văn cờ và màu.
+Rương ẩn hoạt động y hệt kit, chỉ khác hai điểm:
 
-![Armor Trim](/images/kit/armor-trim.png)
+- Mỗi rương ẩn có **27 ô**, và load ra sẽ vào **rương ẩn** của bạn chứ không phải túi đồ.
+- Khi sửa rương ẩn, **9 ô thanh công cụ bị phủ kính đỏ** — đó chỉ là lớp che, đồ thật của bạn vẫn còn nguyên bên dưới và được trả lại khi đóng GUI.
 
-### Arrow Effect — hiệu ứng mũi tên
-Với mũi tên, chọn hiệu ứng (Healing, Poison, Strength, Slow Falling...), cấp độ, và tùy chọn mũi tên phát sáng (spectral).
+## Bù đồ & tiện ích trong trận
 
-![Arrow Effect](/images/kit/arrow-effect.png)
-
-Ngoài ra còn có **Variant** (đổi biến thể riêng của món) và **Shulker Contents** (chỉnh đồ bên trong shulker).
-
-::: tip Một số tùy chọn có thể cần quyền
-Vài tùy chọn nâng cao (đổi tên, enchant, trim, đổi số lượng, variant) có thể bị giới hạn theo rank/quyền tùy cấu hình server.
-:::
-
-## Quản lý kit
-
-| Lệnh | Chức năng |
+| Lệnh | Công dụng |
 |---|---|
-| `/kit` (`/k`) | Mở menu kit |
-| `/swapkit <slot1> <slot2>` | Đổi chỗ nội dung giữa 2 slot kit |
-| `/deletekit <slot>` | Xóa 1 slot kit |
-| `/sharekit <slot>` | Tạo **mã chia sẻ** cho 1 kit của bạn (cooldown 5 giây) |
-| `/shareec <slot>` (`/shareenderchest`) | Tạo mã chia sẻ cho 1 enderchest (cooldown 5 giây) |
-| `/copykit <mã>` (`/copyec`) | Nạp 1 kit/enderchest từ mã chia sẻ vào slot của bạn |
-
-## Regear
-
-`/regear` (alias `/rg`) giúp bạn nạp lại đồ đã hao sau khi đánh nhau. Server có 2 chế độ:
-
-- **Chế độ lệnh** — gõ `/rg` là đồ được bù lại ngay.
-- **Chế độ shulker** — `/rg` đưa cho bạn một **Regear Shulker**; mở ra và click **Regear Shell** để bù đồ.
+| `/regear` (`/rg`) | Bù lại đồ tiêu hao của kit vừa dùng |
+| `/repair` | Sửa đồ đang mặc/cầm |
+| `/heal` | Hồi máu |
 
 ![Regear Shulker](/images/kit/regear.png)
 
-::: warning Giới hạn trong combat
-Regear có cooldown (mặc định 5 giây) và **bị khóa tạm thời sau khi vừa dính damage** (mặc định 5 giây), nên không thể regear giữa lúc đang bị đánh để ăn gian. Chỉ những loại đồ nằm trong danh sách cho phép (ender pearl, crystal, obsidian, potion, giáp/vũ khí netherite...) mới được bù.
+`/regear` **không** load lại cả kit. Nó chỉ bù những món tiêu hao mà server cho phép (thường là ngọc ender, bình thuốc, block…), và chỉ bù vào ô đang trống hoặc đang chứa đúng món đó. Vì vậy:
+
+- Phải **load kit ít nhất một lần** thì mới regear được.
+- Đang giao tranh thì **không regear được** — mặc định phải ra khỏi combat 5 giây.
+- Có **thời gian chờ giữa hai lần** dùng (mặc định 5 giây).
+- Nếu server bật chế độ shulker: `/rg` cho bạn một **Regear Shulker** — đặt xuống đất rồi bấm vào vỏ shulker để bù đồ.
+
+## Chia sẻ, sao chép, sắp xếp
+
+| Lệnh | Công dụng |
+|---|---|
+| `/sharekit <1-10>` | Tạo **mã 6 ký tự** cho kit đó (ai cũng dùng được, hết hạn sau 15 phút) |
+| `/shareec <1-5>` | Như trên, nhưng cho rương ẩn |
+| `/copykit <mã>` | Nhận kit/rương ẩn từ mã người khác gửi |
+| `/swapkit <ô1> <ô2>` | Đổi chỗ hai kit |
+| `/deletekit <ô>` | Xoá một kit |
+| `/publickit` (`/pk`) | Xem và load các kit dựng sẵn của server |
+
+::: warning `/copykit` cũng ghi đè túi đồ
+`/copykit` ghi đè toàn bộ túi đồ y như load kit — cất đồ trước khi dùng. Kit nhận được chưa được lưu vào ô nào; muốn giữ thì mở Kit Editor và dựng lại.
 :::
 
-## Kit Room
+## Kho đồ — `/kitroom`
 
-`/kitroom` mở **phòng kit dựng sẵn** do server chuẩn bị — nơi lấy nhanh các vật phẩm theo chủ đề, chia thành nhiều trang: Crystal, Training, Potions, Armory, Axe & UHC... Bạn cũng mở được phòng này bằng nút **Kit Room** trong menu `/kit`.
+- `/kitroom open` — mở kho đồ và lấy đồ thẳng vào túi (đồ vô hạn)
+- `/kitroom editor` — chọn kit/rương ẩn muốn sửa, rồi mở Kit Editor cho ô đó
 
-## Tiện ích khác
+## Gặp vấn đề?
 
-- `/heal` — hồi đầy máu (và no) cho bạn
-- `/repair` — sửa toàn bộ đồ đang cầm/mặc
+**"Sửa kit xong nhưng không thấy nút Lưu."**
+Không có nút Lưu. Đóng GUI (`Esc`) hoặc bấm nút đỏ **Back** là kit tự lưu.
 
-## Kit công khai & dựng sẵn
+**"Mở Kit Editor thì túi đồ biến mất!"**
+Đồ được cất tạm và trả lại khi bạn đóng GUI. Đừng thoát game giữa chừng — cứ đóng GUI bình thường.
 
-- `/publickit` (alias `/pk`) — xem và nạp các kit công khai chia sẻ toàn server
-- `/publickit <tên>` — nạp trực tiếp 1 kit công khai cụ thể
+**"Load kit xong mất hết đồ đang có."**
+Load kit ghi đè toàn bộ túi đồ. Luôn cất đồ vào rương trước khi load.
 
-::: tip Công cụ cho staff & admin
-Staff xem kit/enderchest của người chơi khác bằng `/inspectkit <player> <slot>` và `/inspectec <player> <slot>`. Admin quản lý kit khởi đầu cho người mới qua `/premadekit <create|delete|list|edit|setkit>`.
-:::
+**"Không lấy được món X từ kho."**
+Server có thể giới hạn: chỉ những món có trong Kit Room mới được lưu vào kit, và một số món bị cấm hoàn toàn. Món bị cấm sẽ tự bị gỡ khỏi kit khi lưu.
+
+**"`/rg` báo phải chờ."**
+Bạn vừa bị đánh (chờ hết combat) hoặc vừa regear xong (chờ hết cooldown).
+
+**"Lệnh báo không có quyền."**
+Quyền do admin cấp — hỏi admin server của bạn.
+
+## Bảng lệnh đầy đủ
+
+| Lệnh | Viết tắt | Công dụng |
+|---|---|---|
+| `/kit` | `/k` | Mở menu chính |
+| `/k1` … `/k10` | `/kit1`… | Load kit 1–10 |
+| `/ec1` … `/ec5` | `/enderchest1`… | Load rương ẩn 1–5 |
+| `/ec` | `/enderchest` | Xem rương ẩn |
+| `/kitroom open` | | Mở kho đồ, lấy đồ trực tiếp |
+| `/kitroom editor` | | Chọn kit để sửa |
+| `/publickit` | `/pk` | Kit dựng sẵn của server |
+| `/sharekit <1-10>` | | Tạo mã chia sẻ kit |
+| `/shareec <1-5>` | `/shareenderchest` | Tạo mã chia sẻ rương ẩn |
+| `/copykit <mã>` | `/copyec` | Nhận kit/rương ẩn từ mã |
+| `/swapkit <ô1> <ô2>` | | Đổi chỗ hai kit |
+| `/deletekit <ô>` | | Xoá kit |
+| `/regear` | `/rg` | Bù đồ tiêu hao |
+| `/repair` | | Sửa đồ |
+| `/heal` | | Hồi máu |
