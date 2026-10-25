@@ -12,6 +12,6 @@
     "vitepress": "^1.6.4"
   },
   "dependencies": {
-    "@lucide/vue": "^1.49.0"
+    "@lucide/vue": "^1.61.0"
   }
 }
